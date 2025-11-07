@@ -3,21 +3,14 @@ package com.mysite.sbb;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-/**
- * Lombok 라이브러리 테스트를 위한 클래스
- * 
- * @RequiredArgsConstructor와 @Getter 어노테이션의 동작을 확인하기 위한 예제입니다.
- */
+// Lombok 라이브러리 테스트용 클래스
 @RequiredArgsConstructor
 @Getter
 public class HelloLombok {
-	private final String hello;
-	private final int lombok;
+	private final String hello; // hello 필드
+	private final int lombok; // lombok 필드
 
-	/**
-	 * Lombok 테스트 메인 메서드
-	 * @param args 커맨드 라인 인자
-	 */
+	// Lombok 기능 테스트를 위한 메인 메서드
 	public static void main(String[] args) {
 		HelloLombok helloLombok = new HelloLombok("헬로", 5);
 		System.out.println(helloLombok.getHello());
